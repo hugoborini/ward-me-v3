@@ -1,0 +1,31 @@
+@mixin large {
+  @media (min-width: 770px) {
+    @content;
+  }
+}
+.title {
+  margin-top: 40px;
+  font-size: 20px;
+  @include large {
+    display: none;
+  }
+}
+
+.title__txt {
+  padding-left: 30px;
+  font-family: EA;
+}
+.title__txt--underline {
+  width: 200px;
+  height: 1px;
+  background-color: black;
+}
+
+.nos-expertise {
+  display: flex;
+  flex-direction: column;
+}
+.txt_up {
+  z-index: 1;
+  padding-top: 50px;
+}

@@ -1,0 +1,61 @@
+@mixin large {
+  @media (min-width: 770px) {
+    @content;
+  }
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 390px;
+  background-image: url("../assets/fond.png");
+  @include large {
+    background-image: url("../assets/fond_destop.png");
+    height: 717px;
+    background-repeat: space;
+  }
+}
+
+.first-section__expertise {
+  display: none;
+  @include large {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 100vw;
+    justify-content: space-around;
+  }
+}
+
+.first-section__expertise--chat {
+  @include large {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.first-section__expertise--stat {
+  @include large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.first-section__expertise--chat--txt {
+  display: flex;
+  justify-content: center;
+}
+
+.first-section__image {
+  width: 300px;
+  height: 300px;
+}
