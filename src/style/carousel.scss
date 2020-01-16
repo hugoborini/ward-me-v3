@@ -6,6 +6,33 @@
   }
 }
 
+@mixin mobile-mid {
+  @media (min-width: 650px) {
+    @content;
+  }
+}
+@mixin mobile-mid2 {
+  @media (min-width: 446px) {
+    @content;
+  }
+}
+@mixin destop-large {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin destop-large2 {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin destop-large3 {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -36,23 +63,68 @@ html {
 }
 
 .item-1 {
-  background-image: url("../assets/image0\ 1.png");
+  background-image: url("../assets/mobile_c.png");
+  @include mobile-mid {
+    background-image: url("../assets/mobile1-mid.png");
+  }
+  @include large {
+    background-image: url("../assets/destop_c.png");
+  }
+
+  @include destop-large {
+    background-image: url("../assets/destop-large-1.png");
+  }
 }
 
 .item-2 {
-  background-color: #b22222;
+  background-image: url("../assets/moblie_2.png");
+  @include mobile-mid2 {
+    background-image: url("../assets/mobile2-mid.png");
+  }
+
+  @include large {
+    background-image: url("../assets/destop_2.png");
+  }
+  @include destop-large2 {
+    background-image: url("../assets/destop-large-2.png");
+  }
 }
 
 .item-3 {
-  background-color: #006400;
+  background-image: url("../assets/mobile_3.png");
+  @include mobile-mid {
+    background-image: url("../assets/mobile3-mid.png");
+  }
+  @include large {
+    background-image: url("../assets/destop_3.png");
+  }
+  @include destop-large {
+    background-image: url("../assets/destop-large-3.png");
+  }
 }
 
 .item-4 {
-  background-color: #ffd700;
+  background-image: url("../assets/mobile_4.png");
+  @include mobile-mid {
+    background-image: url("../assets/mobile4-mid.png");
+  }
+  @include large {
+    background-image: url("../assets/destop_6.png");
+  }
+  @include destop-large2 {
+    background-image: url("../assets/destop-large-4.png");
+  }
 }
 
 .item-5 {
-  background-color: #ff4500;
+  background-image: url("../assets/mobile_6.png");
+  @include large {
+    background-image: url("../assets/destop7.png");
+  }
+
+  @include destop-large2 {
+    background-image: url("../assets/destop-large-6.png");
+  }
 }
 
 /* Carousel */
