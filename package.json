@@ -22,5 +22,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.24.4"
+  },
+  "dependencies": {
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1"
   }
 }

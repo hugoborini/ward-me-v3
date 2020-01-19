@@ -146,18 +146,24 @@
       </section>
     </main>
 
-    <footer>
-      <section class="footer--all" id="contact">
+    <footer class="footer-distributed">
+      <div class="footer-right">
         <a href="https://twitter.com/Wardme_"
-          ><img class="twiter" src="assets/logo-twiter.png"
+          ><img id="propo" class="twiter" src="assets/twitter.svg" alt=""
         /></a>
-        <div class="footer--contact">
-          <p class="footer--txt">contact@ward-me.com</p>
-          <p class="footer--txt">Ward-Me © 2020</p>
-        </div>
-      </section>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="#">contact@ward-me.com</a>
+        </p>
+
+        <p>Ward-Me &copy; 2020</p>
+      </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/carouselle.js"></script>
+    <script src="../node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>
