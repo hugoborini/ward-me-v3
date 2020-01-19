@@ -37,10 +37,19 @@ html {
   box-sizing: border-box;
 }
 
-.container-carrousel {
+.container-carrousel__hide {
   display: flex;
   justify-content: center;
+  opacity: 0;
 }
+
+.container-carrousel__scroll {
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  transition: 1s;
+}
+
 .container {
   width: 100vw;
   margin-top: 40px;

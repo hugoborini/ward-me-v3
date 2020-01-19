@@ -37,6 +37,18 @@
   }
 }
 
+.conseil__top {
+  @include large {
+    margin-bottom: 10px;
+  }
+}
+
+.event__top {
+  @include large {
+    margin-bottom: 20px;
+  }
+}
+
 .first-section__expertise--stat {
   @include large {
     display: flex;
