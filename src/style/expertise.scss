@@ -48,11 +48,11 @@
 }
 
 .is-scroll__right {
-  animation: slide__right 2s;
+  animation: slide__right 0.9s;
 }
 
 .is-scroll__left {
-  animation: slide__left 2s;
+  animation: slide__left 0.9s;
 }
 
 .expertise--conseil {
@@ -134,7 +134,7 @@
 
 @keyframes slide__right {
   0% {
-    transform: translateX(300px);
+    transform: translateX(100px);
     opacity: 0;
   }
   100% {
@@ -145,7 +145,7 @@
 
 @keyframes slide__left {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   100% {
